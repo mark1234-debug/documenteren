@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* de header  */
+.header {
+  overflow: hidden;
+  background-color: #3a5757;
+  color: #fff;
+  padding: 0px 30px;
+  font-size: 13px;
+}
+
+/* de header links */
+.header a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 17px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 35px;
+  border-radius: 10px;
+}
+
+.header h1 {
+  padding-top: 19px;
+}
+
+/* Style the active/current link*/
+.header a.active {
+background-color: #ffcd00;
+color: #fff;
+}
+
+/* kleur wanneer muis over  */
+.header a:hover {
+  background-color: #ffcd00;
+  color: #fff;
+}
+
+/* float de nav bar rechts */
+.navbar {
+  color: #fff;
+  float: right;
+}
+
+/* einde header ---------------------------------------------------------------*/
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.boek1{ /*de achtergrond van de boeken informatie tegels*/
+  background-color: rgb(195, 214, 210);
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 500px;
+  height: 300px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.col-md-4 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.col-md-8 {
+  margin: 0px;
+}
+@media screen and (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 45%;
+  }
+  .col-md-8 {
+    flex: 0 0 calc(55% - 40px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .col-md-4 {
+  flex: 0 0 100%;
+  }
+  .col-md-8 {
+      flex: 0 0 100%;
+  }
+}
+
+.filter{
+    margin-right: 200px;
+    width: 100px;
+    background-color: black;
+}
+
+.boek1 img {
+    width: 180px;
+    height: auto;
+  }
+
+.sidebar {
+  width: 250px;
+  float: left;
+  margin-right: 20px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.sidebar select, .sidebar input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.sidebar button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sidebar button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.rows{/* de informatie over de boeken (schrijver etc)*/
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-family: Sans-serif;
+}
+
+.Titel{/*de titel van de informatie over de boeken*/
+  font-size: large;
+  font-family: sans-serif;
+}

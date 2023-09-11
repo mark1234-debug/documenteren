@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  /*de body*/
+body{
+    background-color: #f4f4f4;
+}
+
+/* de header  */
+.header {
+    overflow: hidden;
+    background-color: #3a5757;
+    color: #fff;
+    padding: 0px 30px;
+    font-size: 13px;
+  }
+
+  /* de header links */
+  .header a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 35px;
+    border-radius: 10px;
+  }
+
+  .header h1 {
+    padding-top: 19px;
+  }
+  
+  /* Style the active/current link*/
+.header a.active {
+  background-color: #ffcd00;
+  color: #fff;
+}
+  
+  /* kleur wanneer muis over  */
+  .header a:hover {
+    background-color: #ffcd00;
+    color: #fff;
+  }
+  
+  /* float de nav bar rechts */
+  .navbar {
+    color: #fff;
+    float: right;
+  }
+  
+/* einde header ---------------------------------------------------------------*/
+
+.achtergrond {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.front {
+  position: absolute;
+    top: 23%;
+    left: 20%;
+    right: 20%;
+    background: #f0f0fd;
+    padding: 330px;
+}
+
+.front img {
+  width: 100%;
+}
+
+.front_img {
+  position: absolute;
+  top: 2%;
+  left: 33.33%;
+  right: 33.33%;
+  text-align: center;
+
+} 
+
+.footer {
+  width: 100%;
+  background-color: #3a5757;
+  padding: 45px;
+  display: block;
+  margin: auto;
+  color: #fff;
+}
+
+/*de grote en plek van de twee knoppen in front*/
+.btn {
+  text-align: center;
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 25px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* kleur van de bekijk onze verzameling knop */
+.verzameling {
+  color: green;
+}
+
+/* kleur van de bekijk onze verzameling knop als je met de muis op zit */
+.verzameling:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* kleur van de word lid knop */
+.word_lid {
+  color: dodgerblue;
+}
+
+/* kleur van de word lid knop als je met de muis op zit*/
+.word_lid:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/*informatie gedeelte*/
+.informatie {
+  text-align: center;
+  padding: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 25px;
+}
+
+/* het afbeelding in informatie */
+.info-img {
+  width:50%; 
+  border: 1px solid black; 
+  text-align: center;
+}
+
+/*het doosje zelf*/
+.box {
+  padding: 50px;
+  background-color: #3a5757;
+  border: 1px solid black;
+}
+
+/*clear float after*/
+.box::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*het colom in de doos*/
+.release {
+  text-align: center;
+  float: left;
+  width: 33.33%;
+  font-size: 15px;
+}
+
+.knoppen_front {
+  position: absolute;
+  top: 70%;
+  left: 33%;
+  right: 33%;
+  text-align: center;
+
+}
+
+.popup {
+  display: none;
+  float: left;
+  width: 75%;
+  height: 860px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ffcd00;
+  border-left: none;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  background-color: #687474;
+  width: 25%;
+  height: 860px;
+  border: 1px solid #ffcd00;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  border: 1px solid #ffcd00;
+  border-left: none;
+  border-right: none;
+  background-color: #505858;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #505858;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: #fff;
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
